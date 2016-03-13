@@ -1,0 +1,16 @@
+{% extends 'rango/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}About{% endblock %}
+
+{% block body_block %}
+    <div class="page-header">
+                <h1>About</h1>
+            </div>
+            <div>
+            <p></strong><a href="{% url 'index' %}">Click return to the Home Page</a> </p>
+
+            <img  width="210" height="200" src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> <!-- New line -->
+            </div>
+{% endblock %}
